@@ -43,7 +43,7 @@ public class MorningRushTester
                 --gulps;
             }
         }
-        int lol = 5;
+        
         DrinkCoffee dc = new DrinkCoffee(initialGulps);
         Timer t = new Timer(DELAY, dc);
         t.start();
