@@ -30,12 +30,13 @@ public class MorningRushTester
                 if (gulps >= 0)
                 {
                     System.out.println(gulps);
-                    --gulps;
                 }
-                if (gulps == 0)
-                {
+                else if (gulps == 0)
+                {   
                     System.out.println("Go to school");
+                    JOptionPane.showMessageDialog(null, "Make another?");
                 }
+                --gulps;
             }
         }
         
@@ -43,8 +44,6 @@ public class MorningRushTester
         Timer t = new Timer(DELAY, dc);
         t.start();
         
-        JOptionPane.showMessageDialog(null, "Make another?");
-        JOptionPane.showConfirmDialog(null, "Awesome");
         System.exit(0);
 
     }
